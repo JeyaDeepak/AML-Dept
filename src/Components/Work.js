@@ -259,13 +259,13 @@ const Carousel = ({ data }) => {
   };
 
   const handleNextClick = () => {
-    if (showModal) return; // Don't change index if the popup is visible
+    if (showModal) return;
     setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
     setShowModal(false);
   };
 
   const handlePrevClick = () => {
-    if (showModal) return; // Don't change index if the popup is visible
+    if (showModal) return;
     setActiveIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
     setShowModal(false);
   };

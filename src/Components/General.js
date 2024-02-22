@@ -1,8 +1,6 @@
-// General.js
-
 import React from 'react';
-import ImageSlider from './ImageSlider'; // Assuming ImageSlider component is in a separate file
-import Features from './Features'; // Assuming Features component is in a separate file
+// import ImageSlider from './ImageSlider';
+import Features from './Features';
 import Testimonial from './Testimonial';
 
 const General = () => {

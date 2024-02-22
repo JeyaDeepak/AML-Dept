@@ -10,13 +10,9 @@ const Head = () => {
       setIsMobileView(window.innerWidth <= 767);
     };
 
-    // Initial check
     handleResize();
 
-    // Add event listener for window resize
     window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -30,7 +26,6 @@ const Head = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // marginLeft: '3vw'
       }}
     >
       <img

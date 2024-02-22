@@ -13,7 +13,7 @@ const Aboutclg2 = () => {
   const containerStyle = {
     display: 'flex',
     justifyContent: 'space-around',
-    marginTop: '7vh', // Increased margin top
+    marginTop: '7vh',
     marginBottom: '2vh',
     flexWrap: 'wrap',
   };
@@ -42,8 +42,8 @@ const Aboutclg2 = () => {
 
   const headingStyle = {
     fontSize: '3rem',
-    marginBottom: '2vh', // Add margin below the heading
-    textAlign: 'center', // Center the heading
+    marginBottom: '2vh',
+    textAlign: 'center',
   };
 
   const handleHover = (index) => {

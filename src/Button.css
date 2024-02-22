@@ -3,21 +3,23 @@
 .regf {
     position: relative;
     display: inline-block;
-    padding: 25px 30px;
+    padding: 30px 35px;
     margin: 40px 0;
-    color: blue;
+    color: red;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
+    font-weight: bolder;
+    font-size: larger;
 }
 .regf:hover {
-    background: blue;
+    background: red;
     color: #050801;
-    box-shadow: 0 0 5px blue, 0 0 25px blue, 0 0 50px blue,
-    0 0 200px blue;
+    box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red,
+    0 0 200px red;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 .regf:nth-child(1) {
@@ -35,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, blue);
+    background: linear-gradient(90deg, transparent, red);
     animation: animate1 1s linear infinite;
 }
 @keyframes animate1 {
@@ -52,7 +54,7 @@
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, blue);
+    background: linear-gradient(180deg, transparent, red);
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
@@ -70,7 +72,7 @@
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, blue);
+    background: linear-gradient(270deg, transparent, red);
     animation: animate3 1s linear infinite;
     animation-delay: 0.5s;
 }
@@ -89,7 +91,7 @@
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, blue);
+    background: linear-gradient(360deg, transparent, red);
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
 }

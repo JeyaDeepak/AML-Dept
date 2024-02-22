@@ -8,12 +8,16 @@ const Footer = () => {
     padding: '10px',
     bottom: 0,
     marginLeft: '-7.5vw',
-    width: '100vw', // Set width to 100% of the viewport width
+    width: '100vw', 
+  };
+
+  const spanStyle = {
+    color:'white'
   };
 
   return (
     <footer style={footerStyle}>
-      All rights reserved St. Joseph's College of Engineering | Design by <a href='https://www.linkedin.com/in/vijaybala7604/' target='_blank' style={{color: 'white'}}>VIJAY BALA A</a>
+      All rights reserved St. Joseph's College of Engineering | Design by <span style={spanStyle}>Jeya Deepak</span>
     </footer>
   );
 }

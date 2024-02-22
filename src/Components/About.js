@@ -1,5 +1,5 @@
 import React from "react";
-import AboutBackground from "../Assets/about-background.png";
+// import AboutBackground from "../Assets/about-background.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import NewSlider from "./NewSlider";
 
@@ -20,15 +20,17 @@ const About = () => {
       <div className="about-section-text-container" style={{ lineHeight: '1.5' }}>
         {/* <p className="primary-subheading">About</p> */}
         
-        <p className="primary-text">- Accredited by NBA Since 2002</p>
-        <p className="primary-text">- Anna university recogonized Research centre</p>
-        <p className="primary-text">- Strong Industrial collaboration and Alumni interaction for placements</p>
+        {/* <p className="primary-text">- Accredited by NBA Since 2002</p> */}
+        {/* <p className="primary-text">- Anna university recogonized Research centre</p> */}
+        <p className="primary-text">- . Ever since its inception in 2021 the department has consistently brought laurels to the college.</p>
         <p className="primary-text">- Several clubs & student chapters for promoting Co-Curricular activities</p>
         <p className="primary-text">- Motivating students to participate in various national events</p>
         <p className="primary-text">- Several value-added courses are conducted beyond curriculum</p>
         <p className="primary-text">- Facilitating Industrial Visits and NGOs for the comprehensive development of the students </p>
+        <p className="primary-text">- The Department has signed MoU with various leading Industries for technical collaboration.</p>
+
         <div className="about-buttons-container">
-          <a href="https://www.stjosephscse.com/#/"
+          {/* <a href="https://www.stjosephscse.com/#/"
             target="_blank"
             style={{
               color: "white",
@@ -36,7 +38,7 @@ const About = () => {
             }}
             rel="noopener noreferrer" >
             <button className="secondary-button">Home</button>
-          </a>
+          </a> */}
           <a
             href={youtubeChannelURL}
             target="_blank"

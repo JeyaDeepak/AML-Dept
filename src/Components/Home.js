@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const Home = () => {
   const staticContent = [
     {
-      heading: "Department Of<br/>Computer Science &<br/>Engineering Offers a summer internship by the best professionals. &<br/> From 15th April to 24th May",
+      heading: "Department Of<br/>Artificial Intelligence &<br/>Machine Learning Offers a summer internship by the best professionals. &<br/> From 15th April to 24th May",
       text: [
         "Courses Offered",
         "- Web Development",
@@ -15,7 +15,7 @@ const Home = () => {
         "- Game Development",
         "- Python Programming",
       ],
-      link: "https://forms.gle/EYDz9tTzWM4AvGCa7",
+      link: "https://forms.gle/2j9CKu3NK9URfPVUA",
       buttonText: "Register Now",
     },
   ];  
@@ -40,7 +40,6 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, [lineIndex, currentItemIndex]);
 
-  // Reset animation when not in view
   useEffect(() => {
     if (!inView) {
       setCurrentItemIndex(0);
@@ -84,7 +83,8 @@ const Home = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         marginTop: '2vh',
-        marginBottom: '3vh'
+        marginBottom: '3vh',
+        marginRight: '2vw'
       }}
     >
       <div
@@ -93,21 +93,21 @@ const Home = () => {
           transition: 'opacity 1s ease-in-out, transform 1s ease-in-out, scale 1s ease-in-out',
           opacity: inView ? 1 : 0,
           transform: inView ? 'translateY(0)' : 'translateY(20px) scale(0.9)',
-          backgroundColor: 'transparent', // Transparent background
-          padding: '20px', // Adjust padding as needed
-          borderRadius: '10px', // Adjust border radius as needed
-          color: 'white', // Text color
+          backgroundColor: 'transparent', 
+          padding: '20px',
+          borderRadius: '10px',
+          color: 'white', 
         }}
       >
         <h1 className="primary-heading" style={{ textAlign: 'center', whiteSpace: 'pre-line',
           background: 'linear-gradient(blue, black)',
         backgroundClip: 'text',
         WebkitTextFillColor: 'transparent', fontSize: '3vh' }}>
-          Department Of</h1><h1 className="primary-heading" style={{ textAlign: 'center', whiteSpace: 'pre-line',
+          Department Of</h1><h2 className="primary-heading" style={{ textAlign: 'center', whiteSpace: 'pre-line',
           background: 'linear-gradient(blue, black)',
         backgroundClip: 'text',
         WebkitTextFillColor: 'transparent',fontSize: '4vh' }}>
-          Computer Science & Engineering <br /></h1>
+          Artificial Intelligence & <br /> Machine Learning <br /></h2>
         <h2 style={{ textAlign: 'center', whiteSpace: 'pre-line', fontSize:'2rem', color:'#4c4c4c',
           background: 'linear-gradient(blue, black)',
         backgroundClip: 'text',

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Marquee.css'; // Include your CSS file
+import './Marquee.css';
 import cognizantImage from '../Assets/cognizant.png';
 import wiproImage from '../Assets/wipro.png';
 import mindtreeImage from '../Assets/mindtree.png';

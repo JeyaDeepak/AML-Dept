@@ -1,10 +1,9 @@
 import React from 'react';
 import { LoopCircleSlider } from 'react-looped-carousel';
-import 'react-looped-carousel/lib/style.css'; // Ensure you import the styles
-
+import 'react-looped-carousel/lib/style.css';
 import webImage from '../Assets/web.jpg';
 import uiuxImage from '../Assets/uiux.png';
-import posterImage from '../Assets/poster.png';
+import posterImage from '../Assets/pooster.png';
 import pythonImage from '../Assets/python.jpg';
 import cyberImage from '../Assets/cyber.jpg';
 import gameImage from '../Assets/game.jpg';

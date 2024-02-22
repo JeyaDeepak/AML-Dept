@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import image01 from '../Assets/01.jpeg';
-import image02 from '../Assets/02.jpeg';
-import image03 from '../Assets/03.jpeg';
-import image04 from '../Assets/04.jpeg';
-import image05 from '../Assets/05.jpeg';
-import image06 from '../Assets/06.jpeg';
-import image07 from '../Assets/07.png';
-import image08 from '../Assets/08.png';
-import image09 from '../Assets/09.jpeg';
-import image10 from '../Assets/10.jpeg';
-import image11 from '../Assets/11.png';
-import image12 from '../Assets/12.jpeg';
-import image13 from '../Assets/13.jpeg';
-import image14 from '../Assets/14.jpeg';
+import image01 from '../Assets/01.png';
+import image02 from '../Assets/02.png';
+import image03 from '../Assets/03.png';
+import image04 from '../Assets/011.jpg';
+import image05 from '../Assets/012.jpg';
+import image06 from '../Assets/013.jpg';
+import image07 from '../Assets/014.jpg';
+import image08 from '../Assets/015.jpg';
+import image09 from '../Assets/016.jpg';
+import image10 from '../Assets/017.jpg';
+
 
 const NewSlider = () => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -20,18 +17,18 @@ const NewSlider = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setImageOpacity(0); // Set opacity to 0 before changing image
+      setImageOpacity(0); 
       setTimeout(() => {
-        setImageIndex((prevIndex) => (prevIndex + 1) % 11); // Change 11 to the total number of images
-        setImageOpacity(1); // Set opacity back to 1 after changing image
-      }, 1500); // Adjust the transition time
+        setImageIndex((prevIndex) => (prevIndex + 1) % 10);
+        setImageOpacity(1); 
+      }, 1500);
     }, 4000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   const getImageName = (index) => {
-    const images = [image09, image07, image11, image03, image04, image12, image01, image06, image05, image08, image13, image10, image02, image14];
+    const images = [image09, image07, image03, image04, image01, image06, image05, image08, image10, image02];
     return images[index];
   };
 
@@ -41,15 +38,15 @@ const NewSlider = () => {
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
-    marginTop: '5vh', // Add margin-top
+    marginTop: '5vh'
   };
 
   const imageStyle = {
-    width: 'auto', // Adjust the width as needed
+    width: 'auto', 
     height: 'auto',
-    borderRadius: '10px', // Add border radius
-    transition: 'opacity 1s ease-in-out', // Add transition
-    opacity: imageOpacity, // Set the opacity
+    borderRadius: '10px', 
+    transition: 'opacity 1s ease-in-out', 
+    opacity: imageOpacity, 
   };
 
   return (
